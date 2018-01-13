@@ -13,10 +13,10 @@ include $(INCLUDE_DIR)/package.mk
 define Package/ext-rooter8
   SECTION:=utils
   CATEGORY:=ROOter
-  DEPENDS:=+luci +luci-app-sqm +luci-app-rooterddns +luci-app-rootervpn +luci-app-mwan3 \
-		+ext-rooter-basic +ext-p910nd +ext-samba \
+  DEPENDS:=+luci +luci-app-sqm +luci-app-mwan3 \
+		+ext-rooter-basic +ext-samba \
 		+ext-umount +ext-command +luci-theme-darkmatter +kmod-sched-cake \
-		+openvpn-easy-rsa +openvpn-openssl +wget +ext-extra \
+		+wget +ext-extra \
 		+nano +picocom +bwmon +luci-app-hotspot +luci-app-wol +luci-app-dnsmasq-ipset
   TITLE:=ROOter support for 8meg and larger routers
   PKGARCH:=all
